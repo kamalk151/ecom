@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/ecom/static/css/main.8c5c9014.css",
+    "main.js": "/ecom/static/js/main.3e985216.js",
+    "static/js/211.8c803ea1.chunk.js": "/ecom/static/js/211.8c803ea1.chunk.js",
+    "static/js/787.f23dbe26.chunk.js": "/ecom/static/js/787.f23dbe26.chunk.js",
+    "static/media/banner.jpg": "/ecom/static/media/banner.dc806d12b1904257020b.jpg",
+    "static/media/mob_side.jpg": "/ecom/static/media/mob_side.dbb6441a95c2cd93cba2.jpg",
+    "static/media/girl_side_img.jpg": "/ecom/static/media/girl_side_img.b4f3427091f2a554a786.jpg",
+    "static/media/lap_side.jpg": "/ecom/static/media/lap_side.04d4b44cd093ee360d6c.jpg",
+    "static/media/header_bg.jpg": "/ecom/static/media/header_bg.90d66e4e54313b4ca499.jpg",
+    "static/media/laptop.png": "/ecom/static/media/laptop.4d155b06ba6469527be9.png",
+    "static/media/gadgets_logo.PNG": "/ecom/static/media/gadgets_logo.c0ca2cecf11372ef7c60.PNG",
+    "static/media/black_logo.PNG": "/ecom/static/media/black_logo.5da46b3580567de5af8c.PNG",
+    "index.html": "/ecom/index.html",
+    "main.8c5c9014.css.map": "/ecom/static/css/main.8c5c9014.css.map",
+    "main.3e985216.js.map": "/ecom/static/js/main.3e985216.js.map",
+    "211.8c803ea1.chunk.js.map": "/ecom/static/js/211.8c803ea1.chunk.js.map",
+    "787.f23dbe26.chunk.js.map": "/ecom/static/js/787.f23dbe26.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8c5c9014.css",
+    "static/js/main.3e985216.js"
+  ]
+}
