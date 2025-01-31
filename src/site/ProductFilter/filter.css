@@ -1,0 +1,104 @@
+/*-------------left_content------------------*/
+.left_content {
+    width:196px;
+    float:left;
+}
+.title_box{
+    width:196px;
+    height:30px;
+    margin:5px 0 0 0;
+    /* background-color:url(../Assets/img/menu_title_bg.gif) no-repeat center; */
+    background-color: #4a4a4a;
+    text-align:center;
+    font-size:13px;
+    font-weight:bold;
+    color:#fff;
+    line-height:30px;
+}
+/*--------left menu---------*/
+ul.left_menu{
+    width:196px;
+    padding:0px;
+    margin:0px;
+    list-style:none;
+}
+ul.left_menu li{
+    margin:0px;
+    list-style:none;
+}
+
+ul.left_menu li.odd input[type='checkbox']{
+    padding:7px
+}
+ul.left_menu li.odd label{
+    margin-left:12px
+}
+ul.left_menu li.odd{
+    /* width:166px; */
+    display:flex;
+    /* background:url(../Assets/img/checked.png) no-repeat left #dad0d0;  */
+    background-position:5px 5px;
+    border-bottom:1px #FFFFFF solid;
+    text-decoration:none;
+    color:#504b4b;
+    padding:0 0 0 30px; 
+    text-align: left;
+    line-height:25px;
+}
+ul.left_menu li.even{
+    /* width:166px; */
+    height:25px;
+    display:block;
+    background:url(../Assets/img/checked.png) no-repeat left #eee6e6;
+    background-position:5px 5px;
+    border-bottom:1px #FFFFFF solid;
+    text-decoration:none;
+    color:#504b4b;
+    text-align: left;
+    padding:0 0 0 30px; 
+    line-height:25px;
+}
+ul.left_menu li.even:hover, ul.left_menu li.odd:hover{
+    /* background:url(../Assets/img/checked.png) no-repeat left #7bbcc7; */
+    color:#504b4b;
+    background-color: #ddd;
+    background-position:5px 5px;
+}
+
+/*----------newsletter--------------*/
+input.newsletter_input{
+    width:160px;
+    height:16px;
+    border:1px #ddd9d9 solid;
+    margin:10px 0 5px 0;
+    font-size:12px;
+    padding:3px;
+    color:#999999;
+}
+a.join{
+    width:17px;
+    display:block;
+    margin:5px 0 5px 140px;
+    _margin:5px 0 5px 130px;
+    background:url(../Assets/img/blue-add.png) no-repeat left;
+    padding:0 0 0 20px;
+    text-decoration:none;
+    color:#1c4a52;
+}
+.banner_adds{
+    width:194px;
+    text-align:center;
+    padding:10px 0 10px 0;
+}
+.brandBox ul{
+    border: 1px #6da6b1 solid;
+}
+.form-control{
+    font-size: 11px;
+}
+.form-check input{cursor: pointer;}
+
+.border_box{
+    text-align:center;
+    border:1px #6da6b1 solid;
+}

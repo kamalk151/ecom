@@ -1,0 +1,227 @@
+.top_bar{
+  /* width:1000px; */
+  /* height:60px; */
+  display: flex;
+  justify-content: space-around;
+  background-color:#4a4a4a;
+}
+
+.blackLogo img{
+  width: 200px;
+}
+/* Search Panel css */
+.top_search{
+  width:432px;
+  float: right;
+  height:38px;
+  margin:10px 0px 0 0;
+  _margin:0px 10px 0 0;
+  display:flex;
+  background: #f4f1f1;
+  border-radius: 1px;
+}
+input.search_input{
+  width: 430px;
+  height: 36px;
+  padding: 0px 0px 0px 30px;
+  border:1px solid #dbdbdb;
+  border-bottom-color:#ffffff;
+  border-right-color:#ffffff;
+}
+.search_text{
+  float:left;
+  width:110px;
+  padding:8px 0 0 15px;
+  color:#676d77;
+}
+.search_text a{
+  text-decoration:none;
+  color:#999999;
+}
+.search_bt{
+  padding: 5px 0 0 10px;
+  width: 48px;
+  height: 35px;
+}
+/* End Sliding */
+
+/* Mid Header */
+#header{
+  /* width:1000px; */
+  height:145px;
+  background:url(../Assets/img/header_bg.jpg) no-repeat center;
+  background-position:0px 0px;
+  margin:auto;
+  display: flex;
+  background-size: cover;
+}
+#logo{
+  float:left;
+  padding:15px;
+}
+/* end header */
+
+/*------------------------------Header slider content -----------------------*/
+.oferte_content{
+  width:590px;
+  height:144px;
+}
+.top_divider{
+  float:left;
+  width:1px;
+  height:164px;
+}
+.oferta{
+  width:548px;
+  float:left;
+  padding:15px 20px 0 20px;
+}
+.oferta_img{
+  float:left;
+  padding:0 0 10px 0;
+}
+.oferta_title{
+  font-size:15px;
+  color:#b72c24;
+  font-weight:bold;
+}
+.oferta_details{
+  width:400px;
+  float:left;
+  padding:0 0 0 30px;
+}
+.oferta_text{
+  padding:5px 0 5px 0;
+  font-size:12px;
+  color:#FFFFFF;
+  text-align:justify;
+  line-height:15px;
+}
+a.details{
+  width:83px;
+  height:21px;
+  display:block;
+  float:right;
+  margin:5px 0 0 0;
+  padding-left:5px;
+  background:url(../Assets/img/details_bt_bg.gif) no-repeat center;
+  text-align:center;
+  line-height:21px;
+  text-decoration:none;
+  color:#000000;
+}
+
+/*---------------- menu tab----------------------*/
+#menu_tab{
+  /* width:1000px; */
+  display: flex;
+  height:37px;
+  background-color:#fff;
+}
+.left_menu_corner{
+  width:9px;
+  height:37px;
+  background:url(../Assets/img/menu_left.gif) no-repeat center;
+}
+.right_menu_corner{
+  width:9px;
+  height:37px;
+  float:left;
+  background:url(../Assets/img/menu_right.gif) no-repeat center;
+}
+ul.menu {
+  list-style-type:none;
+  display:flex; 
+  width:100%; 
+  margin:0px;
+  padding:0px;
+  background:url(../Assets/img/menu_bg.gif) repeat-x;
+}
+
+ul.menu li {
+  font-size:11px;
+  font-weight:bold;
+  display:flex;
+}
+ul.menu span.divider {
+  width:2px;
+  height:37px;
+  background:url(../Assets/img/menu_divider.gif) no-repeat center;
+}
+
+a.nav1:link, a.nav1:visited {
+  background:url(../Assets/img/home.png) no-repeat left; 
+  color:#676d77;
+}
+
+.menu li:has(a.active), .menu li a.active {
+  color:#fff;
+  background-color: #4a4a4a
+}
+
+.menu a:link, a:visited {
+  padding:0px 0px 0px 22px; 
+  margin:0 10px 0 10px;
+  display: inline-flex;
+  height: 37px;
+  width: 85px;
+  color:#676d77;
+  /* margin: 0px 10px; */
+  line-height: 37px;
+  text-decoration:none;
+}
+a.nav2:link, a.nav2:visited {
+  background:url(../Assets/img/services.png) no-repeat left; 
+  color:#676d77;
+}
+a.nav3:link, a.nav3:visited {
+  background:url(../Assets/img/favs.png) no-repeat left; 
+  color:#676d77;
+}
+a.nav4:link, a.nav4:visited {
+  background:url(../Assets/img/user_add.png) no-repeat left; 
+  color:#676d77;
+}
+a.nav5:link, a.nav5:visited {
+  width: 112px;
+  background:url(../Assets/img/car.png) no-repeat left; 
+  color:#676d77;
+}
+a.nav6:link, a.nav6:visited {
+  background:url(../Assets/img/contact-new.png) no-repeat left; 
+  color:#676d77;
+}
+
+a.nav7:link, a.nav7:visited {
+  background:url(../Assets/img/contact-new.png) no-repeat left; 
+  color:#676d77;
+}
+
+a.nav1:hover, a.nav2:hover, a.nav3:hover, a.nav4:hover, a.nav5:hover, a.nav6:hover {
+  color:#333333;
+}
+
+/* end navigation bar css */
+
+
+/* shake cart */
+
+.shakeCart {
+  animation: shake .7s;
+}
+
+@keyframes shake {
+  0%, 100%{
+    transform: translateX(0px);
+  }
+  20%, 80% {
+    transform: translateX(-3px) rotate(-7deg);
+  }
+  40%, 60% {
+    transform: translateX(3px) rotate(7deg);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+}
+/**** end shake cart/*/

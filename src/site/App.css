@@ -1,0 +1,53 @@
+.App {
+  margin: 0 auto;
+  width: 92%;
+}
+.form .form-control{
+  font-size: 0.7rem;
+  color:#4a4a4a;
+}
+.form .btn-primary{
+  font-size:11px;
+  background-color:#4a4a4a;
+  border-color:#4a4a4a;
+  color: #fff
+}
+.form .btn-primary:active{
+  background-color:#4a4a4a;
+  border-color:#4a4a4a;
+}
+.form .btn-primary:hover{
+  background-color:#4a4a4a;
+  border-color:#4a4a4a;
+}
+
+.address-list .input-group{
+  width: 95%;
+  border-bottom: 1px solid;
+  min-height: 50px;
+  margin: 0px auto;
+}
+
+.address-list .form-group{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.address-list .form-check-input{
+  padding:8px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

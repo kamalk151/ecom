@@ -1,0 +1,88 @@
+/*---------prod_box----------*/
+.accountContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.accountContainer ul.left_menu li.even{
+  /* width:166px; */
+  border-bottom:1px #FFFFFF solid;
+  text-decoration:none;
+  color:#fff;
+  text-align: left;
+  padding:0 0 0 30px; 
+  line-height:25px;
+}
+.accountContainer ul.left_menu li.odd:hover{
+  /* background:url(../Assets/img/checked.png) no-repeat left #7bbcc7; */
+  color:#fff;
+  background-color: #4a4a4a;
+  background-position:5px 5px;
+}
+.accountContainer ul.left_menu li.odd:has(a.active){
+  background-color: #4a4a4a;
+  color: #fff;
+}
+
+.accountContainer ul.left_menu li.odd a.active{
+  color: #fff;
+}
+.accountContainer ul.left_menu li.odd a{
+  width: 150px;
+}
+
+.dashboard-right{
+  width: 100%;
+  padding: 1px 10px;
+  border-left: 1px solid #ddd;
+}
+/* .dashboard-right{
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /*
+} */
+
+.dashboard{
+  width: 100%;
+}
+
+em {font-size: 9px;}
+.bottom-border{
+  border-bottom: 1px solid #548f99;
+}
+.basic-info{
+  display: flex;
+  justify-content: space-around;
+}
+.billing-address{
+  /*width:250px*/
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+.profile-address h3{
+  display: flex;
+}
+.billing-address .form-label{
+  width:250px;
+  border: 1px solid #548f99;
+  border-radius: 7px;
+  padding: 5px;
+}
+.billing-address .alert{
+  padding: 5px;
+  text-align: center;
+}
+.pm-address-height{
+  min-height: 35px;
+  display: flow;
+}
+.pm-address-height input{
+  padding: 10px;
+}
+.profile-title{
+  display: flex;
+  justify-content: space-between
+}
+.profile-title a{
+  padding: 15px;
+}
