@@ -1,4 +1,4 @@
-import ProductFilter from '../ProductFilter'
+import ProductFilter from './ProductFilter'
 import {lazy, Suspense} from 'react'
 // import { useState } from 'react'
 const ProductList = lazy(() => import ('./ProductsList'))

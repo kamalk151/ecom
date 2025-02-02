@@ -1,11 +1,12 @@
+import { useState } from 'react'
+import * as Icon from 'react-bootstrap-icons'
+import { Alert, FormControl, NavLink } from 'react-bootstrap'
 import PropTypes from 'prop-types'
 import ProductImgs from './ProductImgs'
-import { Alert, FormControl, NavLink } from 'react-bootstrap'
-import CurrencyIcon from '../CommonComponent/CurrencyIcon'
-import * as Icon from 'react-bootstrap-icons'
-import { useState } from 'react'
-import locale from '../Config/lang'
-import { validateQuanity, getAddedToCartItemQuantity } from './helper'
+
+import CurrencyIcon from '../../CommonComponent/CurrencyIcon'
+import locale from '../../Config/lang'
+import { validateQuanity, getAddedToCartItemQuantity } from '../helper'
 
 const ProductDetailSection = ({ productInfo, cartHandler }) => {
   const prodInfo = productInfo.length ? productInfo[0] : {}

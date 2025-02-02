@@ -14,7 +14,7 @@ const Terms = () => {
         style={{'textAlign':'center', 
           'fontSize': '30px', 'fontStyle':'italic', 'fontFamily': 'cursive'}}
       >
-       Comming Soon............!
+        Comming Soon............!
       </p>
     </div>
   )

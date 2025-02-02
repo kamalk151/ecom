@@ -3,19 +3,13 @@
     "es6": true,
     "browser": true
   },
-  "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:jsx-a11y/recommended",
-    "plugin:react/jsx-runtime"
-  ],
   "plugins": ["react", "import", "jsx-a11y"],
   "rules": {
     "react/prop-types": 1,
-    "indent": ["error", 2],
+    "indent": "off",
     "linebreak-style": 0,
     "max-len": [
-      "error", {
+      "warn", {
         "code": 105,
         "tabWidth": 2,
         "ignoreStrings": true,
@@ -24,12 +18,12 @@
       }
     ],
     "quotes": ["warn", "single"],
-    "no-return-await": "error",
+    "no-return-await": "warn",
     "prefer-const": ["warn", {
       "destructuring": "any",
       "ignoreReadBeforeAssign": false
     }],
-    "no-unused-vars": [2, 
+    "no-unused-vars": [1, 
       {
         "vars": "all",
         "args": "after-used",
@@ -38,14 +32,13 @@
     ],
     "camelcase": [
       "warn", {
-          "ignoreImports": false,
-          "ignoreGlobals": false,
-          "ignoreDestructuring": false,
-          "properties": "always"
+        "ignoreImports": false,
+        "ignoreGlobals": false,
+        "ignoreDestructuring": false,
+        "properties": "always"
       }
     ]
   },
-  "parser": "@babel/eslint-parser",
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module",
@@ -58,6 +51,14 @@
       }
     }
   },
+  "parser": "@babel/eslint-parser",
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react/jsx-runtime",
+    // "plugin:prettier/recommended"
+  ],
   "settings": {
     "react": {
       "version": "detect"

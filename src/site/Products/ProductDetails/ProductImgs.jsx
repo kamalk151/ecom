@@ -20,6 +20,6 @@ const ProductImgs = ({ imgList }) => {
 }
 
 ProductImgs.propTypes = {
-  imgList: PropTypes.array
+  imgList: PropTypes.object
 }
 export default ProductImgs

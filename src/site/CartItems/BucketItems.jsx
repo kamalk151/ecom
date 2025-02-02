@@ -76,7 +76,7 @@ BucketItems.propTypes = {
   qtyHandler: PropTypes.func,
   cartItem: PropTypes.arrayOf(PropTypes.shape({
     productId: PropTypes.string.isRequired
-    // Add other properties as needed
+  // Add other properties as needed
   })).isRequired,
   quantity: PropTypes.object
 }

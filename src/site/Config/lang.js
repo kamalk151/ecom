@@ -31,6 +31,8 @@ const locale = {
   totalAmount: 'Total Amount',
   youSave: 'You Save',
   yourOrder: 'My Orders',
+  detailView: 'detail view',
+  view: 'View',
   // Others
   billingAddress: 'Billing Address',
   primaryAddress: 'Primary Address',

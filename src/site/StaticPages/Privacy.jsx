@@ -9,15 +9,15 @@ const Privacy = () => {
             'fontSize': '30px', 
             'fontStyle':'italic', 'fontFamily': 'cursive'}}
         >
-        Privacy and Policy
+          Privacy and Policy
         </p>
         <hr />
-        <p className=' mb-3' 
+        <p className=' mb-3'
           style={{'textAlign':'center',
-            'fontSize': '30px', 
+            'fontSize': '30px',
             'fontStyle':'italic', 'fontFamily': 'cursive'}}
         >
-       Comming Soon............!
+          Comming Soon............!
         </p>
       </div>
     </div>

@@ -1,9 +1,10 @@
-import ProductDetailSection from './ProductDetailSection'
-import { productData } from '../MockData'
 import { useParams } from 'react-router-dom'
-import './product.css'
-import { useDispatchCartAction, useGetCartItems } from './hooks'
 import { useDispatch } from 'react-redux'
+import ProductDetailSection from './ProductDetailSection'
+import { productData } from '../../MockData'
+import './../product.css'
+import { useDispatchCartAction, useGetCartItems } from '../hooks'
+
 
 const ProductDetail = () => {
   const param = useParams()

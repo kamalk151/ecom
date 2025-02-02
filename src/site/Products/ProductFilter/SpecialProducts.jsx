@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
-import { specialProduct } from '../MockData'
-import locale from '../Config/lang'
-import CurrencyIcon from '../CommonComponent/CurrencyIcon'
+import { specialProduct } from '../../MockData'
+import locale from '../../Config/lang'
+import CurrencyIcon from '../../CommonComponent/CurrencyIcon'
 
 const SpecialProduct = () => {
   /* set random product */

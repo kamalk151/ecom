@@ -3,6 +3,7 @@ import './header.css'
 import SearchPanel from './SearchPanel'
 import MenuBar from './MenuBar'
 import SideCartPanel from '../SideCartPanel'
+
 const NavBar = () => {
   const [isPaneOpen, setIsPaneOpen] = useState(false)
 

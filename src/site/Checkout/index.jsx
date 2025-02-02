@@ -1,7 +1,7 @@
 import Address from './Address'
 import CartItems from './CartItems'
 import PaymentMethod from './PaymentMethod'
-import { useGetCartItems } from '../ProductDetails/hooks'
+import { useGetCartItems } from '../Products/hooks'
 import locale from '../Config/lang'
 import CurrencyIcon from '../CommonComponent/CurrencyIcon'
 const Checkout = () => {

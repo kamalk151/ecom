@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import CurrencyIcon from '../CommonComponent/CurrencyIcon'
+import CurrencyIcon from '../../CommonComponent/CurrencyIcon'
 import RangeSlider from 'react-bootstrap-range-slider'
 
 const PriceFilter = ({locale, priceHandler, maxPrice}) => {

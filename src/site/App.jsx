@@ -1,14 +1,15 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Layout from './GlobalPage/index'
-import { BrowserRouter as Router } from 'react-router-dom'
+// import { BrowserRouter as Router, HashRouter } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 
 function App() {
   return (
     <div className="App">
-      <Router>
+      <HashRouter>
         <Layout />
-      </Router>
+      </HashRouter>
     </div>
   )
 }

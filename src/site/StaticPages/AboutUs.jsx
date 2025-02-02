@@ -8,14 +8,14 @@ const AboutUs = () => {
           style={{'textAlign':'center', 'fontSize': '30px', 
             'fontStyle':'italic', 'fontFamily': 'cursive'}}
         >
-        About Us
+          About Us
         </p>
         <hr />
         <p className=' mb-3' 
           style={{'textAlign':'center', 'fontSize': '30px', 
             'fontStyle':'italic', 'fontFamily': 'cursive'}}
         >
-       Comming Soon............!
+          Comming Soon............!
         </p>
       </div>
     </div>

@@ -6,13 +6,13 @@ import { useDispatch } from 'react-redux'
 import {
   useGetCartItems,
   useDispatchCartAction
-} from '../ProductDetails/hooks'
-import locale from '../Config/lang'
+} from '../Products/hooks'
 import {
   validateQuanity
-} from '../ProductDetails/helper'
+} from '../Products/helper'
 import { removeToCart } from '../Action/cartAction'
 import BucketItems from './BucketItems'
+import locale from '../Config/lang'
 
 const CartItems = () => {
   const cartItem = useGetCartItems()

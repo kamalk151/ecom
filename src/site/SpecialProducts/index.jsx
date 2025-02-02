@@ -1,4 +1,4 @@
-import ProductFilter from '../ProductFilter'
+import ProductFilter from '../Products/ProductFilter'
 import {lazy, Suspense} from 'react'
 const ProductList = lazy(() => import ('../Products/ProductsList'))
 import locale from '../Config/lang'

@@ -1,9 +1,7 @@
 import PropTypes from 'prop-types'
-import {
-  Form
-} from 'react-bootstrap'
+import { Form } from 'react-bootstrap'
 
-import { filter } from '../MockData'
+import { filter } from '../../MockData'
 
 const BrandFilter = ({locale, brandHandler }) => {
   

@@ -3,6 +3,8 @@ import ProductBox from './ProductBox'
 import { productData } from '../MockData'
 
 const ProductsList = ({ locale }) => {
+  productData.length = 10
+  // productData.sort
   return (
     <>
       <div className='center_title_bar'>

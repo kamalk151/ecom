@@ -14,7 +14,7 @@ import SpecialProducts from '../SpecialProducts/index'
 import Terms from '../StaticPages/Terms'
 import Privacy from '../StaticPages/Privacy'
 import MyAccounts from '../MyAccounts'
-import ProductDetails from '../ProductDetails'
+import ProductDetails from '../Products/ProductDetails'
 
 const Layout = () => {
   // const location = useLocation()
@@ -26,7 +26,7 @@ const Layout = () => {
         <NavBar />
       </div>
       <div className='center-container'>
-        <Routes>
+        <Routes path='ecom'>
           <Route exact path='/' element={<Home />} />
           {/* <Route exact path='/about' element={<About />} /> */}
           <Route exact path='/products' element={<Product />} />
@@ -40,6 +40,17 @@ const Layout = () => {
           <Route path='/aboutUs' element={<AboutUs />} />
           <Route path='/terms' element={<Terms />} />
           <Route path='/my-account/*' element={<MyAccounts />} />
+          {/* Catch-all route in case of unmatched paths */}
+          <Route path="*" element={
+            <div className='not-found'>
+              <h1 className='mt-3 emptyCart' style={{ fontSize: '150px' }}>
+                404
+              </h1>
+              <h1 className='mt-3 emptyCart' style={{ fontSize: '60px' }}>
+                Not Found!
+              </h1>
+            </div>
+          } />
         </Routes>
       </div>
       <div className='footer-container'>

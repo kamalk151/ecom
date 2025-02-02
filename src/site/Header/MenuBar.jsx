@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Navbar } from 'react-bootstrap'
 import { menuConfig } from '../Config/index'
 import { NavLink, Link } from 'react-router-dom'
-import { useGetCartItems } from '../ProductDetails/hooks'
+import { useGetCartItems } from '../Products/hooks'
 
 const Menu = ({isPaneOpen, panHandler}) => {
   const cartItems = useGetCartItems()

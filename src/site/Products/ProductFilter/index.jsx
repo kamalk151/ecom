@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import SideFilter from './SideFilter'
-import './filter.css'
+import '../filter.css'
 
 const SideBar = ({ locale }) => {
   return (

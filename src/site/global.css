@@ -1,3 +1,8 @@
 :global(.bg-salmon) {
   background-color: salmon;
 }
+:global(.not-found) {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 60px;
+}

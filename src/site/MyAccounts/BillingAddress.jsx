@@ -1,11 +1,9 @@
-
 import PropTypes from 'prop-types'
 import {Form, Alert} from 'react-bootstrap'
 import {NavLink} from 'react-router-dom'
 import * as Icon from 'react-bootstrap-icons'
 import { useState } from 'react'
 import AddressForm from '../Checkout/NewAddressForm'
-// import * as Icon from 'react-bootstrap-icons'
 
 const BillingAddress = ({ locale }) => {
   const [addressForm, setAddressForm] = useState(false)
