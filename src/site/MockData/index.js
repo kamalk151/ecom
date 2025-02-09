@@ -4,140 +4,33 @@ import cartImg from '../Assets/img/cart.gif'
 import laptopImg from '../Assets/img/laptop.png'
 import mobile from '../Assets/img/p4.gif'
 import machine from '../Assets/img/p5.gif'
-import {proData} from './productData'
+const productImg = [laptopImg, mobile, machine]
+const productBrand = ['apple', 'lenovo', 'samsung']
+const productType = ['special', 'latest']
 
-export const productData = proData
-export const specialProduct = [{
-  cartImg: cartImg,
-  favImg: favImg,
-  starImg: startImg,
-  productImg: laptopImg,
-  price: '270',
-  discount: '10',
-  totalPrice: '10',
-  productName: 'Motorola 156 MX-VL270 29',
-  productId: 1212,
-  productType: 'latest',
-  productBrand: 'apple',
-  manufacturer: 'India'
-},{
-  cartImg: cartImg,
-  favImg: favImg,
-  starImg: startImg,
-  productImg: machine,
-  price: '270',
-  discount: '10',
-  totalPrice: '10',
-  productName: 'Motorola 156 MX-VL270 28',
-  productId: 1213,
-  productType: 'latest',
-  productBrand: 'apple',
-  manufacturer: 'India'
-},{
-  cartImg: cartImg,
-  favImg: favImg,
-  starImg: startImg,
-  productImg: mobile,
-  price: '270',
-  discount: '10',
-  totalPrice: '10',
-  productName: 'Motorola 156 MX-VL270',
-  productId: 1214,
-  productType: 'special',
-  productBrand: 'samsung',
-  manufacturer: 'china'
-},{
-  cartImg: cartImg,
-  favImg: favImg,
-  starImg: startImg,
-  productImg: laptopImg,
-  price: '270',
-  discount: '10',
-  totalPrice: '10',
-  productName: 'Motorola 156 MX-VL270 27',
-  productId: 1215,
-  productType: 'special',
-  productBrand: 'nokia',
-  manufacturer: 'India'
-},{
-  cartImg: cartImg,
-  favImg: favImg,
-  starImg: startImg,
-  productImg: mobile,
-  price: '270',
-  discount: '10',
-  totalPrice: '10',
-  productName: 'Motorola 156 MX-VL270 26',
-  productId: 1216,
-  productType: 'special',
-  productBrand: 'lg',
-  manufacturer: 'Us'
-},{
-  cartImg: cartImg,
-  favImg: favImg,
-  starImg: startImg,
-  productImg: laptopImg,
-  price: '270',
-  discount: '10',
-  totalPrice: '10',
-  productName: 'Motorola 156 MX-VL270 25',
-  productId: 1217,
-  productType: 'latest',
-  productBrand: 'apple',
-  manufacturer: 'India'
-},{
-  cartImg: cartImg,
-  favImg: favImg,
-  starImg: startImg,
-  productImg: mobile,
-  price: '270',
-  discount: '10',
-  totalPrice: '10',
-  productName: 'Motorola 156 MX-VL270 24',
-  productId: 1218,
-  productType: 'special',
-  productBrand: 'redmi',
-  manufacturer: 'china'
-},{
-  cartImg: cartImg,
-  favImg: favImg,
-  starImg: startImg,
-  productImg: laptopImg,
-  price: '270',
-  discount: '10',
-  totalPrice: '10',
-  productName: 'Motorola 156 MX-VL270 23',
-  productId: 1219,
-  productType: 'special',
-  productBrand: 'apple',
-  manufacturer: 'India'
-},{
-  cartImg: cartImg,
-  favImg: favImg,
-  starImg: startImg,
-  productImg: mobile,
-  price: '270',
-  discount: '10',
-  totalPrice: '10',
-  productName: 'Motorola 156 MX-VL270 21',
-  productId: 1221,
-  productType: 'special',
-  productBrand: 'redmi',
-  manufacturer: 'china'
-},{
-  cartImg: cartImg,
-  favImg: favImg,
-  starImg: startImg,
-  productImg: laptopImg,
-  price: '270',
-  discount: '10',
-  totalPrice: '10',
-  productName: 'Motorola 156 MX-VL270 22',
-  productId: 1222,
-  productType: 'special',
-  productBrand: 'apple',
-  manufacturer: 'India'
-}]
+export const getProductData = (length=60) => {
+  const prodData = []
+  for (let i = 0; i < length; i++) {
+    const imgIndx = Math.floor(Math.random() * productImg.length)
+    prodData.push({
+      cartImg: cartImg,
+      favImg: favImg,
+      starImg: startImg,
+      productImg: productImg[imgIndx],
+      price: 270 + i,
+      discount: 10 + imgIndx,
+      totalPrice: 10 + i,
+      productName: 'Motorola 156 MX-VL270 29' + i,
+      productId: 'prod_' + i,
+      productType: productType[imgIndx % 2],
+      qty: 1+i,
+      productBrand: productBrand[imgIndx],
+      manufacturer: 'India',
+      title: 'My Cinema-U3000/DVBT, USB 2.0 TV BOX External, White'
+    })
+  }
+  return prodData
+}
 
 export const filter = [{
   label: 'Apple',

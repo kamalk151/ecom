@@ -209,7 +209,20 @@ a.nav1:hover, a.nav2:hover, a.nav3:hover, a.nav4:hover, a.nav5:hover, a.nav6:hov
 .shakeCart {
   animation: shake .7s;
 }
-
+a.bucketIcon{
+  min-width: 115px;
+  height: 30px;
+  display:block;
+  background:url(../Assets/img/addtocart.gif) no-repeat left;
+  padding:0 0 0 33px;
+  text-decoration:none;
+  line-height:30px;
+  /* font-size: 16px; */
+  color:#1c4a52;
+}
+.bucketIcon span{
+  margin-left: 10px;
+}
 @keyframes shake {
   0%, 100%{
     transform: translateX(0px);

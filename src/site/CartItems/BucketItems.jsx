@@ -29,7 +29,7 @@ const BucketItems = ({
             Array.isArray(cartItem) && cartItem.map((item, ind) => (
               <tr key={ ind }>
                 <td>{ item.productName }</td>
-                <td className='cart_box'>
+                <td className='qtyBox'>
                   <FormControl type='number'
                     name={`prodId${item.productId}`}
                     onChange={(e) => qtyHandler(e, item) }

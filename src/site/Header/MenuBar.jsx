@@ -25,7 +25,7 @@ const Menu = ({isPaneOpen, panHandler}) => {
           <li className='cart-menu' >
             <Link href='d' 
               onClick={() => panHandler(!isPaneOpen) } 
-              className='addtocart'>
+              className='bucketIcon'>
               <span className='circle cart-qty'>
                 ( { cartItems.length } )</span>
             </Link>

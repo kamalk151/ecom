@@ -1,10 +1,10 @@
 
 import { Table } from 'react-bootstrap'
-import { productData } from '../MockData'
+import { getProductData } from '../MockData'
 import locale from '../Config/lang'
 
 const OrdersComponent = () => {
-  const myOrders = productData.splice(0, 2)
+  const myOrders = getProductData(2)
   
   return (
     <div className='orders'>

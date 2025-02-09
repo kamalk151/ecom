@@ -1,9 +1,9 @@
 import { Table } from 'react-bootstrap'
 import PropTypes from 'prop-types'
-import { productData } from '../MockData'
+import { getProductData } from '../MockData/index'
 
 const DashboardComponent = ({ locale }) => {
-  const myOrders = productData.splice(0, 2)
+  const myOrders = getProductData(2)
   return (
     <div className='dashboard'>
       <div className='bottom-border'>

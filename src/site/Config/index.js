@@ -12,13 +12,13 @@ export const menuConfig = [{
   className: 'nav2',
   id: ''
 },
-{
-  to: '/special-products',
-  label: 'Specials',
-  componentName: 'Specials',
-  className: 'nav3',
-  id: ''
-},
+// {
+//   to: '/special-products',
+//   label: 'Specials',
+//   componentName: 'Specials',
+//   className: 'nav3',
+//   id: ''
+// },
 {
   to: '/registration',
   label: 'Signup / Signin',

@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom'
-import { specialProduct } from '../../MockData'
+import { getProductData } from '../../MockData'
 import locale from '../../Config/lang'
 import CurrencyIcon from '../../CommonComponent/CurrencyIcon'
 
 const SpecialProduct = () => {
   /* set random product */
+  const specialProduct = getProductData(10)
   let product = specialProduct.length ? specialProduct[0] : []
   const randomId = Math.floor(Math.random() * 2000)
   const randomProd = specialProduct.find(item => randomId === item.productId)

@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import { NavLink } from 'react-bootstrap'
 
 const ProductImgs = ({ imgList }) => {
-
+  console.log(imgList, '==imgList')
   return (
     <>
       <div className='product_img_big'> 

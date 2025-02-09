@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types'
 import ProductBox from './ProductBox'
-import { getProductData } from '../MockData'
+import { getProductData } from '../MockData/index'
 
-const ProductsList = ({ locale }) => {
-  const productData = getProductData(60)
-  console.log(productData, '==productData')
+const SpecialProduct = ({ locale }) => {
+  const productData = getProductData(20)
+  // productData.sort
   return (
     <>
       <div className='center_title_bar'>
@@ -26,8 +26,8 @@ const ProductsList = ({ locale }) => {
   )
 }
 
-ProductsList.propTypes = {
+SpecialProduct.propTypes = {
   locale: PropTypes.object
 }
 
-export default ProductsList
+export default SpecialProduct

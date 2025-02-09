@@ -10,7 +10,7 @@ const BrandFilter = ({locale, brandHandler }) => {
       <div className='title_box'>{ locale.brand } </div>
       <ul className='left_menu'>
         {
-          filter && filter.map((el, key) => {
+          filter.length && filter.map((el, key) => {
             return (
               <li key={ key } className='odd'>
                 <Form.Check 

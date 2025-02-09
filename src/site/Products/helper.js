@@ -15,7 +15,6 @@ export const validateQuanity = (val) => {
     return val
   }
   if(val.length > 4) {
-		
     return val.substring(0, 3)
   }
   const num = +val.trim()
@@ -26,8 +25,12 @@ export const validateQuanity = (val) => {
   return number
 }
 
-// get quantity of cart item
-export const getAddedToCartItemQuantity = (item) => {
+/**
+ * To retrieve the total added quantity of each individual product from the bucket.
+ * @param {Array} item 
+ * @returns 
+ */
+export const getTotalQuantities = (item) => {
   const cartItem = useGetCartItems()
   const selectedItem = cartItem.length &&
 		cartItem.find(list => list.productId === item.productId)

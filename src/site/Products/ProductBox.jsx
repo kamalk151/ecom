@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
-import * as Icon from 'react-bootstrap-icons'
 import CurrencyIcon from '../CommonComponent/CurrencyIcon'
+import AddToCartButton from './ProductDetails/AddToCartButton'
 
 const ProductBox = ({ boxDetails, locale }) => {
 
@@ -32,13 +32,8 @@ const ProductBox = ({ boxDetails, locale }) => {
         <Link to={`/product/details/${ boxDetails.productId }`} title='Product details'>
           { locale.detailView }
         </Link>
-        <Icon.Cart4
-          color='black'
-          title='Add to cart'
-          className='bi bi-star-fill'
-          size={12}
-          fontWeight={'bold'}>
-        </Icon.Cart4>
+       
+        <AddToCartButton productInfo={{ ...boxDetails, qty:1 }} shakerHandler={() => console.log('Shake')} type='icon' />
       </div>
     </div>
   )
